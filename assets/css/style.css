@@ -1,0 +1,488 @@
+body, p, a, span, h1, h2, h3, h4, h5, h6{
+  font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+  position: relative; 
+}
+.clear { clear: both; height: 0; overflow: hidden;}
+a{
+  color:#00A59B;
+}
+a:hover{
+  color:#000;
+}
+
+.header-padding{
+  padding-top: 95px;
+}
+
+.head-office{
+  padding-top: 10px;
+}
+
+.pusher{
+  margin-top:15px;
+}
+.pusher-bottom{
+  margin-bottom:15px;
+}
+.pusher-more{
+  margin-top:28px;
+}
+.pusher-bottom-more{
+  margin-bottom:28px;
+}
+.mega-pusher2{
+  margin-top:90px;
+}
+.mega-tradepal-text{
+  padding: 5px 70px 0px 70px;
+}
+.mega-pusher{
+  margin-top:45px;
+}
+.map-bg {
+  background-image: url(../images/map-sinet.jpg);
+  height: 379px;
+  background-repeat:no-repeat;
+  background-size:cover;
+  background-position:center;
+  text-align: center;
+  width:100%;
+  height: 400px !important;
+}
+.background-sok-im{
+  background-image: url(../images/sok-im-properties.png);
+  height: 379px;
+  background-repeat:no-repeat;
+  background-size:cover;
+  background-position:center;
+  width:100%;
+  height: 478px !important;
+}
+.contact-background{
+  background-color: #23a099 !important;
+  height: 80px;
+  line-height: 80px;
+  text-align: center;
+  font-size: 24px;
+  color: white;
+}
+.indobest-block-left{
+  padding: 125px 35px 10px 0px;
+  height: 478px;
+}
+.indobest-block-right{
+  padding: 0px 0px 0px 0px;
+  height: 478px;
+}
+.tradepal-block-left{
+  padding: 0px 0px 0px 0px;
+  height: 478px;
+}
+.tradepal-block-right{
+  padding: 125px 35px 10px 35px;
+  height: 478px;
+}
+.indobest-img{
+  margin-top:178px;
+}
+.tradepal-img{
+  margin-top:137px;
+}
+.background-sok-im .the-half{
+  background: none !important;
+  color: #ffffff;
+  padding: 40px 100px 99px 10px;
+}
+.background-sok-im .cover-text .pusher-more{
+  text-align: center;
+}
+.background-sok-im .cover-text{
+  background-color: hsla(0,0%,100%,.8) !important;
+  color:black;
+  padding:20px;
+}
+.clear-up .cover-text{
+  padding:20px;
+}
+.background-director .cover-text{
+  background-color: #fef7f1 !important;
+  padding:20px;
+}
+.clear-up .the-half2{
+  background: none !important;
+  color: #ffffff;
+  padding: 40px 100px 99px 100px;
+}
+.background-director{
+  padding: 50px 100px 100px 50px !important;
+}
+.clear-up{
+  background-image: url(../images/clean-up.png);
+  height: 379px;
+  background-repeat:no-repeat;
+  background-size:cover;
+  background-position:center;
+  width:100%;
+  height: 478px !important;
+  color: #ffffff;
+}
+.the-half2{
+  position:relative;
+  background-size: cover;
+  width:50%;
+  float:left;
+  padding:20px 100px 100px 100px;
+  z-index:10;
+}
+.the-half2 a{
+  color: #ffffff;
+}
+.contact-bg {
+  background-color: hsla(0,0%,100%,.8);
+}
+.map-bg .contact-bg, .map-bg .container, .map-bg .row {
+  height: 100%;
+}
+.mega-pusher-bottom{
+  margin-bottom:100px;
+}
+.text-center{
+  text-align: center;
+}
+.halves{
+  /*display: inline-block;*/
+  width:100%;
+  float:left;
+}
+.halves:before{
+  content:" ";
+  display:table;
+}
+.halves::after{
+  content:"";
+  clear:both;
+}
+.the-half{
+  position:relative;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color:#FFF;
+  width:50%;
+  float:left;
+  padding:50px 100px 100px 100px;
+  z-index:10;
+}
+.cta{
+  background-color:#00A59B;
+  padding:7px 25px;
+  color:#fff
+}
+.cta.border{
+  border:2px solid #fff;
+}
+
+.the-half.sinet, .the-half.sitravel{
+  height:478px;
+  color:#FFF;
+}
+.the-half.sinet{
+  background-image:url('../images/sinet-bg.jpg');
+}
+.the-half.sitravel{
+  background-image:url('../images/sitravel-bg.jpg');
+}
+
+.the-half.indobest-text, .the-half.indobest-icon{
+  height:478px;
+  background:none;
+}
+
+.space-row{
+  margin-bottom:0px;
+  background-color: #F2F4FA;
+  width: 100%;
+  padding-bottom: 0px;
+}
+
+.the-half.map{
+  padding:0;
+  /*height:500px;*/
+}
+
+.orange-line{
+  height:5px;
+  width:100%;
+  display:block;
+  background-color:#f49400;
+}
+
+.navbar{
+  min-height: 100px;
+}
+.navbar-default{
+  background-color: #fff;
+}
+.navbar-nav>li>a{
+  padding-top:45px;
+}
+
+.main-img-container{
+  background-image:url('../images/header.jpg');
+  background-repeat:no-repeat;
+  background-size:cover;
+  background-position:center;
+  color:#ffffff;
+  text-align: center;
+  width:100%;
+  height: 400px !important;
+}
+.navbar-nav>li>a.menu-active{
+  padding:20px;
+  margin-top:20px;
+}
+.main-img-container h1{
+  font-size:25px;
+}
+.main-img-container h2{
+  font-size:20px;
+}
+
+.lix-logos img{
+  margin-right:20px;
+}
+
+footer{
+  position:relative;
+  background-color: #23A09A;
+  text-align:center;
+  color:#fff;
+  padding:50px 0;
+  z-index:10;
+  float:left;
+  width:100%;
+}
+.giant-pusher-bottom {
+  margin-bottom: 100px;
+}
+footer a{
+  color:#fff;
+  text-decoration: underline;
+}
+
+/* Mobile */
+@media(max-width:767px){
+  .mega-pusher{
+    margin-top:50px;
+  }
+
+  .header-padding {
+    padding-top: 55px;
+  }
+
+  .navbar{
+    position: fixed;
+    min-height:60px;
+    padding-bottom:0;
+    margin-bottom:0;
+  }
+  .navbar-brand{
+    width:50%;
+    padding: 8px 0 0 10px;
+  }
+  .container>.navbar-header, .container-fluid>.navbar-header, .container>.navbar-collapse, .container-fluid>.navbar-collapse{
+    border:0;
+  }
+  .navbar-nav>li>a{
+    padding:0px 15px 15px 15px;
+  }
+  .navbar-nav{
+    margin-top: 25px;
+  }
+  .main-img-container h1{
+    font-size:20px;
+    text-align: center;
+  }
+  .main-img-container h2{
+    font-size:15px;
+  }
+ 
+  .halves{
+    float:none;
+    display: inline-block;
+  }
+  .the-half.sinet, .the-half.sitravel, .the-half.map{
+    height:auto;
+  }
+  .the-half{
+    width:100%;
+    padding:50px;
+    float:none;
+    background-color:transparent;
+  }
+
+  .lix-logos img{
+    margin-bottom:20px;
+  }
+}
+
+/* Clear Up block */
+
+@media (max-width: 767px) {
+
+  .indobest-img {
+    margin-top: 0px;
+  }
+
+  .indobest-block-left {
+    padding: 125px 35px 10px 0px;
+    height: 400px;
+  }
+
+  .indobest-block-right {
+    padding: 0px 0px 0px 0px;
+    height: 200px;
+  }
+
+  .tradepal-img {
+    margin-top: 50px;
+  }
+
+  .tradepal-block-left {
+    padding: 0px 0px 0px 0px;
+    height: 150px;
+  }
+
+  .tradepal-block-right {
+    padding: 35px 35px 10px 35px;
+    height: 300px;
+  }
+
+  .clear-up {
+    background-image: url(../images/clean-up-414.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 478px !important;
+    color: #ffffff;
+  }
+
+  .clear-up .cover-text {
+    background-color: hsla(0, 0%, 35%, 0.8) !important;
+    padding: 20px;
+    height: 280px;
+  }
+
+  .padding-logo {
+    margin-top: 28px;
+    padding-top: 30px;
+  }
+
+  .navbar-brand>img {
+    width: 200px;
+  }
+  
+  .map-bg .contact-bg, .map-bg .container, .map-bg .row {
+    height: 120px;
+    top: -28px;
+  }
+
+  .br-disable {
+    display: none;
+  }
+}
+
+
+
+@media screen and (max-width: 500px) {
+  .clear-up .the-half2{
+    padding: 10px 10px 99px 10px;
+    width: 100%;
+  }
+}
+@media screen and (max-width: 725px) {
+  .clear-up .the-half2{
+    padding: 10px 10px 99px 10px;
+    width: 50%;
+  }
+}
+@media screen and (max-width: 1100px) {
+  .clear-up .the-half2{
+    padding: 10px 10px 99px 10px;
+    width: 70%;
+  }
+}
+@media screen and (max-width: 500px) {
+  .clear-up .the-half2{
+    padding: 10px 10px 99px 10px;
+    width: 100%;
+  }
+}
+@media screen and (max-width: 1500px) {
+  .trim-text{
+    padding: 100px 100px 100px 100px;
+  }
+}
+@media screen and (max-width: 770px) {
+  .trim-text{
+    padding: 50px 100px 100px 50px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .background-director{
+    padding: 0px !important;
+  }
+  .background-sok-im .the-half{
+    padding: 10px 10px 0px 10px !important;
+  }
+  .the-half.aboutUs{
+    padding: 10px 30px 10px 30px;
+  }
+  footer{
+    padding: 20px 0px 54px 0px !important;
+  }
+  .head-text{
+    margin-top:10px;
+  }
+  .indobest-block-left{
+    padding: 50px 35px 10px 20px;
+    height: 372px;
+  }
+  .indobest-block-right,.tradepal-block-left{
+    height: 150px;
+  }
+  .indobest-img {
+    margin-top: 0px;
+  }
+  .tradepal-img {
+    margin-top: 50px;
+  }
+  .tradepal-block-right{
+    padding: 0px 35px 10px 20px;
+    height: 240px;
+  }
+  .map-bg{
+    height: 300px !important;
+  }
+}
+/* Tablet */
+@media(min-width:768px) and (max-width:991px){
+
+  .mega-pusher{
+    margin-top:75px;
+  }
+
+  .halves{
+    float:none;
+    display: inline-block;
+  }
+  .the-half{
+    padding:20px;
+  }
+  .the-half.sinet, .the-half.sitravel{
+    height:368px;
+  }
+  .the-half.map{
+    height:auto;
+  }
+}
