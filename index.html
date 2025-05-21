@@ -14,6 +14,69 @@
       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
+  <style>
+    /* Added style for better text visibility in contact section if needed */
+    .contact-section-wrapper {
+      background-color: #23A09A; /* A neutral dark color */
+      color: #ffffff;
+      padding: 50px 0;
+    }
+    .contact-section-wrapper h2, .contact-section-wrapper h3 {
+      color: #ffffff;
+      font-weight: bold;
+    }
+    .contact-section-wrapper h2 {
+        font-size: 2.5em;
+        margin-bottom: 30px;
+    }
+    .contact-section-wrapper .contact-details {
+        font-size: 1.1em;
+        line-height: 1.7;
+    }
+    .contact-section-wrapper .contact-details p {
+        margin-bottom: 10px;
+    }
+    .contact-section-wrapper .contact-details a {
+      color: #f0ad4e; /* A contrasting color for links */
+      font-weight: bold;
+      text-decoration: underline;
+    }
+    .contact-section-wrapper .head-office {
+        margin-top:0;
+        margin-bottom:15px;
+    }
+    .board-of-directors-section {
+        padding-top: 40px;
+        padding-bottom: 40px;
+        text-align: center;
+        background-color: #f9f9f9; /* Light background for separation */
+    }
+    .board-of-directors-section h2 {
+        margin-bottom: 20px;
+        font-weight: bold;
+    }
+    .board-of-directors-section p {
+        font-size: 1.2em;
+        line-height: 1.8;
+        color: #333;
+    }
+    .about-us-section {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+    /* Style for SOK IM Property text if its original background is removed */
+    .sok-im-property-half .cover-text {
+        color: #333; /* Dark text for light background */
+    }
+    .sok-im-property-half .cover-text h2 {
+        color: #333; /* Ensure heading is also dark */
+    }
+    .section-title {
+        margin-bottom: 30px;
+        font-weight: bold;
+        text-align: center;
+    }
+  </style>
 </head>
 
 <body data-spy="scroll" data-target=".navbar" data-offset="50">
@@ -35,6 +98,9 @@
         </div>
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
           <ul class="nav navbar-nav navbar-right">
+            <li>
+              <a href="#boardOfDirectors" class="menu-active">Board of Directors</a>
+            </li>
             <li>
               <a href="#aboutUs" class="menu-active">About Us</a>
             </li>
@@ -93,46 +159,12 @@
     </div>
   </div>
   <div class="clear"></div>
-  <div class="container-fluid">
-    <div class="container">
-      <div class="col-md-6 indobest-block-left">
-        <h3>INDOBEST</h3>
-        <p>
-          <a href="#">Indobest Group Co., Ltd</a>
-        </p>
-        <p>
-          We are one of the leading trade distributors in Cambodia with 260 permanent staffs nationwide since 1992. 
-	  Together with our sister trading company BDC Ltd., 
-          we have established strong and reliable distribution channels in all provinces and remote areas.
-        </p>
-      </div>
-      <div class="col-md-6 indobest-block-right">
-        <img src="assets/images/idb.jpg" class="center-block indobest-img" />
-      </div>
-    </div>
-  </div>
-  <div class="clear"></div>
-  <div class="container-fluid" style="background-color: #F2F4FA;">
-    <div class="container">
-      <div class="col-md-6 tradepal-block-left">
-        <img src="assets/images/tradepal.png" class="center-block tradepal-img" />
-      </div>
-      <div class="col-md-6 tradepal-block-right">
-        <h3>TRADEPAL</h3>
-        <p>
-          <a href="#">Tradepal INTERNATIONAL PTE LTD</a>
-        </p>
-        <p>
-          Tradepal INTERNATIONAL PTE LTD: Duty-Free Distributor in Indo-China region.
-        </p>
-      </div>
-    </div>
-  </div>
-  <div class="clear"></div>
-  <div class="halves background-sok-im">
+
+  <!-- SOK IM Property Section (Photo removed, text kept, styling adjusted if needed) -->
+  <div class="halves sok-im-property-half"> <!-- Removed background-sok-im class, added sok-im-property-half for specific styling -->
     <div class="container">
       <div class="the-half">
-        <div class="cover-text">
+        <div class="cover-text"> <!-- Text color might need adjustment via CSS if it was light on dark -->
           <h2>SOK IM Property</h2>
           <p>
             A real estate specialist in Cambodia managing and creating office spaces, warehouses and land in premier locations nationwide.
@@ -144,6 +176,8 @@
       </div>
     </div>
   </div>
+
+  <!-- BDC Section (Remains as is, forms the other half) -->
   <div class="halves clear-up">
     <div class="the-half2">
       <div class="cover-text">
@@ -164,64 +198,64 @@
       </div>
     </div>
   </div>
-  <div class="halves" id="aboutUs">
-    <div class="the-half aboutUs">
-      <h3>ABOUT US</h3>
-      <p>
-        Sok Im Holding: is a sole proprietary holding company with diversified businesses and investments in various key growth sectors
-        in Telecommunications, Trading, Property, FMCG, Travel, and Hospitality in Cambodia for more than 20 years. Sok Im
-        Holding is the preferred business partners of choice for national and international companies. We are held in high
-        regards thanks to our humble business dealings, strong ethical and integrity standards and close relations with relevant
-        authorities.
-        <br />
-        <br />
-        <h4>Core Values</h4>
-        People: people are our best and most important assets.
-        <br /> Accountability: we take charge of our work end to end.
-        <br /> Quality: we ensure high and consistent quality not only to our customers, but also to fellow employees and shareholders.
-        <br /> Integrity: we value honesty, truthfulness and strong ethical standard.
-        <br /> Social Responsibility: we do our work responsibly to our environment and community.
-      </p>
-    </div>
-    <div class="the-half background-director">
-      <div class="cover-text">
-        <h3>Board of Directors</h3>
-        <p>
-          Madam. Sok Im, President
-          <br /> Mr. Phu Cai Qiang, Steven, Vice President
-          <br />
-          <br />
-          <h4>Management Team</h4>
-          <ul>
-            <li>Mr. Meta Sy, CEO, Sok Im Holding</li>
-            <li>Mrs. S. Paulin, Group Finance Manager</li>
-            <li>Mr. Tan Yi Pheng, GM, Indobest Group and BDC Ltd</li>
-            <!--<li>Mr. Setha Chuon, CFO, S.I Group</li>-->
-            <!--<li>Mr. Vireak Ouk, COO, S.I Group</li>-->
-          </ul>
-        </p>
+  <div class="clear"></div>
+
+  <!-- Board of Directors Section -->
+  <div id="boardOfDirectors" class="container board-of-directors-section">
+      <div class="row">
+          <div class="col-lg-12">
+              <h2>Board of Directors</h2>
+              <p>
+                  Madam. Sok Im, President
+                  <br /> Mr. Phu Cai Qiang, Steven, Vice President
+              </p>
+          </div>
       </div>
+  </div>
+
+  <!-- About Us Section (Management Team removed, made full-width) -->
+  <div id="aboutUs" class="container pusher-more about-us-section">
+    <div class="row">
+        <div class="col-lg-10 col-lg-offset-1">
+            <h3 class="section-title">ABOUT US</h3>
+            <p>
+                Sok Im Holding: is a sole proprietary holding company with diversified businesses and investments in various key growth sectors
+                in Telecommunications, Trading, Property, FMCG, Travel, and Hospitality in Cambodia for more than 20 years. Sok Im
+                Holding is the preferred business partners of choice for national and international companies. We are held in high
+                regards thanks to our humble business dealings, strong ethical and integrity standards and close relations with relevant
+                authorities.
+                <br />
+                <br />
+                <h4>Core Values</h4>
+                People: people are our best and most important assets.
+                <br /> Accountability: we take charge of our work end to end.
+                <br /> Quality: we ensure high and consistent quality not only to our customers, but also to fellow employees and shareholders.
+                <br /> Integrity: we value honesty, truthfulness and strong ethical standard.
+                <br /> Social Responsibility: we do our work responsibly to our environment and community.
+            </p>
+        </div>
     </div>
   </div>
   <div class="clear"></div>
-  <div class="container-fluid contact-background" id="contact">
-    CONTACT US
-  </div>
-  <div class="clear"></div>
-  <div class="map-bg">
+
+  <!-- Contact Us Section (Map removed, text and styling updated) -->
+  <div class="container-fluid contact-section-wrapper" id="contact">
     <div class="container">
       <div class="row">
-        <div class="col-lg-3 col-lg-offset-9 col-sm-4 col-sm-offset-8 contact-bg">
-          <h3 class="pusher-more head-office">Head Office</h3>
+        <div class="col-md-12 text-center">
+           <h2>CONTACT US</h2>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-8 col-md-offset-2 text-center contact-details">
+          <h3 class="head-office">Head Office</h3>
           <p>
-            S.I Building # 93, Preah
-            <br class="br-disable" />Sihanouk Blvd, Phnomh Penh,
-            <br class="br-disable" />Cambodia
+            S.I Building # 93, Preah Sihanouk Blvd, Phnomh Penh, Cambodia
           </p>
           <p>
             <a href="https://www.google.com.kh/maps/place/SINET+Internet+Service+Provider/@11.5560071,104.9212146,19z/data=!3m1!4b1!4m5!3m4!1s0x3109513b66f3d7cf:0x92bd9e1cb7bbd8cb!8m2!3d11.5560058!4d104.9217618?hl=en"
               target="_new">
-              <b>Map</b>
+              View Map
             </a>
           </p>
         </div>
@@ -229,12 +263,13 @@
     </div>
   </div>
   <div class="clear"></div>
+
   <footer>
     <div class="container">
       <div class="row">
         <div class="col-lg-12">
           <p>
-            Copyright &copy; 2018
+            Copyright © 2018
             <a href="/">www.sokimholding.com.kh</a> All Rights Reserved.
           </p>
         </div>
