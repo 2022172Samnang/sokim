@@ -15,7 +15,29 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
   <style>
-    /* Added style for better text visibility in contact section if needed */
+    /* --- Global Font Adjustments --- */
+    body {
+      font-size: 15px; /* Base font size increased from Bootstrap's 14px for a subtle overall increase */
+    }
+
+    h1, .h1 { font-size: 2.5em; } /* Approx 37.5px; BS default H1 is 36px */
+    h2, .h2 { font-size: 2.1em; } /* Approx 31.5px; BS default H2 is 30px */
+    h3, .h3 { font-size: 1.7em; } /* Approx 25.5px; BS default H3 is 24px */
+    h4, .h4 { font-size: 1.25em; } /* Approx 18.75px; BS default H4 is 18px */
+
+    p {
+      line-height: 1.6; /* Default line-height for paragraphs */
+    }
+
+    /* Paragraphs in main content sections, slightly larger than body default */
+    .pusher-more .container p,
+    .cover-text p,
+    .about-us-section p {
+        font-size: 1.07em; /* Approx 16px (1.07 * 15px) */
+        line-height: 1.7;
+    }
+    /* --- End Global Font Adjustments --- */
+
     .contact-section-wrapper {
       background-color: #23A09A; /* A neutral dark color */
       color: #ffffff;
@@ -26,11 +48,11 @@
       font-weight: bold;
     }
     .contact-section-wrapper h2 {
-        font-size: 2.5em;
+        font-size: 2.6em;
         margin-bottom: 30px;
     }
     .contact-section-wrapper .contact-details {
-        font-size: 1.1em;
+        font-size: 1.15em;
         line-height: 1.7;
     }
     .contact-section-wrapper .contact-details p {
@@ -56,7 +78,7 @@
         font-weight: bold;
     }
     .board-of-directors-section p {
-        font-size: 1.2em;
+        font-size: 1.15em;
         line-height: 1.8;
         color: #333;
     }
@@ -64,18 +86,39 @@
         padding-top: 40px;
         padding-bottom: 40px;
     }
+    .about-us-section h4 { /* For "Core Values" title */
+        font-weight: bold;
+        margin-top: 25px;
+        margin-bottom: 10px;
+    }
+
     /* Style for SOK IM Property text if its original background is removed */
     .sok-im-property-half .cover-text {
         color: #333; /* Dark text for light background */
     }
     .sok-im-property-half .cover-text h2 {
         color: #333; /* Ensure heading is also dark */
+        /* Will inherit global h2 styling (which includes Bootstrap's default bold) */
     }
-    .section-title {
+
+    .section-title { /* Used for About Us H3 */
         margin-bottom: 30px;
         font-weight: bold;
         text-align: center;
     }
+
+    /* Navbar links font size */
+    .navbar-default .navbar-nav > li > a {
+        font-size: 1em;
+    }
+
+    /* Titles like SINET, CDC - MODIFIED */
+    .pusher-more .container > h3 { /* More specific for direct child h3 */
+        font-weight: normal; /* CHANGED from bold to normal */
+        margin-bottom: 15px;
+        /* Will inherit global h3 styling for size */
+    }
+
   </style>
 </head>
 
@@ -141,7 +184,7 @@
   </div>
   <div class="pusher-more">
     <div class="container">
-      <h3>SINET</h3>
+      <h3>SINET</h3> <!-- Will now be normal weight -->
       <p>
         Founded in 2009, SINET is a Specialist Dedicated Internet and Telecom Service Provider with strong focuses on engineering
         excellence and reliable support. SINET is one of the biggest providers with nation-wide Fiber, DWDM, SDH and a MetroEthernet
@@ -151,21 +194,38 @@
         but also in remote districts and villages.
       </p>
       <p class="pusher-more">
-        <a href="https://www.sinet.com.kh" class="cta border" target="_new">Read More</a>
+        <a href="https://demo.sinet.com.kh/" class="cta border" target="_new">Read More</a>
       </p>
       <p class="pusher-more">
         <img src="assets/images/sinet-logo.png" />
       </p>
     </div>
   </div>
+  
+  <!-- CDC Section -->
+  <div class="pusher-more">
+    <div class="container">
+      <h3>CDC</h3> <!-- Will now be normal weight -->
+      <p>
+        Discover the Future of Data Management Our certified Tier III data center offers unparalleled reliability and security, designed with your needs in mind. Experience world-class infrastructure tailored for seamless connectivity and peace of mind.
+      </p>
+      <!-- CDC "Read More" Button Added -->
+      <p class="pusher-more">
+        <a href="http://demo.chaktomuk-dc.com.kh/" class="cta border" target="_new">Read More</a>
+      </p>
+      <!-- You might want to add a CDC logo here if available, similar to SINET -->
+    </div>
+  </div>
+  <!-- End CDC Section -->
+
   <div class="clear"></div>
 
-  <!-- SOK IM Property Section (Photo removed, text kept, styling adjusted if needed) -->
-  <div class="halves sok-im-property-half"> <!-- Removed background-sok-im class, added sok-im-property-half for specific styling -->
+  <!-- SOK IM Property Section -->
+  <div class="halves sok-im-property-half">
     <div class="container">
       <div class="the-half">
-        <div class="cover-text"> <!-- Text color might need adjustment via CSS if it was light on dark -->
-          <h2>SOK IM Property</h2>
+        <div class="cover-text">
+          <h2>SOK IM Property</h2> <!-- This h2 will remain bold by default -->
           <p>
             A real estate specialist in Cambodia managing and creating office spaces, warehouses and land in premier locations nationwide.
             Our properties are well suited for commercial and industrial uses such as comany branches, small to medium organisations
@@ -177,11 +237,11 @@
     </div>
   </div>
 
-  <!-- BDC Section (Remains as is, forms the other half) -->
+  <!-- BDC Section -->
   <div class="halves clear-up">
     <div class="the-half2">
       <div class="cover-text">
-        <h2>BDC</h2>
+        <h2>BDC</h2> <!-- This h2 will also remain bold by default -->
         <p>
           <a href="#">BDC Co., Ltd</a>
         </p>
@@ -213,7 +273,7 @@
       </div>
   </div>
 
-  <!-- About Us Section (Management Team removed, made full-width) -->
+  <!-- About Us Section -->
   <div id="aboutUs" class="container pusher-more about-us-section">
     <div class="row">
         <div class="col-lg-10 col-lg-offset-1">
@@ -238,7 +298,7 @@
   </div>
   <div class="clear"></div>
 
-  <!-- Contact Us Section (Map removed, text and styling updated) -->
+  <!-- Contact Us Section -->
   <div class="container-fluid contact-section-wrapper" id="contact">
     <div class="container">
       <div class="row">
