@@ -17,29 +17,28 @@
   <style>
     /* --- Global Font Adjustments --- */
     body {
-      font-size: 15px; /* Base font size increased from Bootstrap's 14px for a subtle overall increase */
+      font-size: 15px; 
     }
 
-    h1, .h1 { font-size: 2.5em; } /* Approx 37.5px; BS default H1 is 36px */
-    h2, .h2 { font-size: 2.1em; } /* Approx 31.5px; BS default H2 is 30px */
-    h3, .h3 { font-size: 1.7em; } /* Approx 25.5px; BS default H3 is 24px */
-    h4, .h4 { font-size: 1.25em; } /* Approx 18.75px; BS default H4 is 18px */
+    h1, .h1 { font-size: 2.5em; } 
+    h2, .h2 { font-size: 2.1em; } 
+    h3, .h3 { font-size: 1.7em; } 
+    h4, .h4 { font-size: 1.25em; } 
 
     p {
-      line-height: 1.6; /* Default line-height for paragraphs */
+      line-height: 1.6; 
     }
 
-    /* Paragraphs in main content sections, slightly larger than body default */
     .pusher-more .container p,
-    .cover-text p,
+    /* .cover-text p, Replaced by more specific styling or will inherit from above */
     .about-us-section p {
-        font-size: 1.07em; /* Approx 16px (1.07 * 15px) */
+        font-size: 1.07em; 
         line-height: 1.7;
     }
     /* --- End Global Font Adjustments --- */
 
     .contact-section-wrapper {
-      background-color: #23A09A; /* A neutral dark color */
+      background-color: #23A09A; 
       color: #ffffff;
       padding: 50px 0;
     }
@@ -59,7 +58,7 @@
         margin-bottom: 10px;
     }
     .contact-section-wrapper .contact-details a {
-      color: #f0ad4e; /* A contrasting color for links */
+      color: #f0ad4e; 
       font-weight: bold;
       text-decoration: underline;
     }
@@ -71,7 +70,7 @@
         padding-top: 40px;
         padding-bottom: 40px;
         text-align: center;
-        background-color: #f9f9f9; /* Light background for separation */
+        background-color: #f9f9f9; 
     }
     .board-of-directors-section h2 {
         margin-bottom: 20px;
@@ -86,20 +85,25 @@
         padding-top: 40px;
         padding-bottom: 40px;
     }
-    .about-us-section h4 { /* For "Core Values" title */
+    .about-us-section h4 { 
         font-weight: bold;
         margin-top: 25px;
         margin-bottom: 10px;
     }
 
-    /* Style for SOK IM Property text if its original background is removed */
-    .sok-im-property-half .cover-text {
-        color: #333; /* Dark text for light background */
+    /* Styles for BDC half section (formerly SOK IM Property had similar structure) */
+    .halves .cover-text { /* General styling for text in the halves if needed */
+        color: #333;
     }
-    .sok-im-property-half .cover-text h2 {
-        color: #333; /* Ensure heading is also dark */
-        /* Will inherit global h2 styling (which includes Bootstrap's default bold) */
+    .halves .cover-text h2 {
+        color: #333; /* Default for BDC, was also for SOK IM Property */
+         /* H2s in .halves.cover-text will be bold by default from Bootstrap */
     }
+     .halves .cover-text p {
+        font-size: 1.07em; /* Match other paragraph text */
+        line-height: 1.7;
+    }
+
 
     .section-title { /* Used for About Us H3 */
         margin-bottom: 30px;
@@ -107,17 +111,36 @@
         text-align: center;
     }
 
-    /* Navbar links font size */
     .navbar-default .navbar-nav > li > a {
         font-size: 1em;
     }
 
-    /* Titles like SINET, CDC - MODIFIED */
-    .pusher-more .container > h3 { /* More specific for direct child h3 */
-        font-weight: normal; /* CHANGED from bold to normal */
+    /* Titles like SINET, CDC, SAYON Property - MODIFIED to target H2 and make non-bold */
+    .pusher-more .container > h2 { 
+        font-weight: normal; 
         margin-bottom: 15px;
-        /* Will inherit global h3 styling for size */
+        /* font-size is 2.1em from global h2 style */
     }
+
+    /* Style for company logos in SINET/CDC/SAYON sections */
+    .pusher-more .container img[src*="logo"] {
+        margin-top: 15px; 
+    }
+
+    /* Class for SINET, CDC, SAYON Property logos to control their size */
+    .company-logo {
+      width: 197px; /* User-defined width */
+      height: auto; /* Maintain aspect ratio */
+    }
+    /* Specific margin for CDC logo wrapper */
+    .cdc-logo-wrapper { 
+        margin-bottom: 20px; /* Space between logo and text */
+    }
+    /* Specific margin for SAYON Property logo wrapper - NEW */
+    .sayon-logo-wrapper {
+        margin-bottom: 20px; /* Space between logo and text */
+    }
+
 
   </style>
 </head>
@@ -184,7 +207,7 @@
   </div>
   <div class="pusher-more">
     <div class="container">
-      <h3>SINET</h3> <!-- Will now be normal weight -->
+      <h2>SINET</h2> <!-- Now non-bold due to CSS update -->
       <p>
         Founded in 2009, SINET is a Specialist Dedicated Internet and Telecom Service Provider with strong focuses on engineering
         excellence and reliable support. SINET is one of the biggest providers with nation-wide Fiber, DWDM, SDH and a MetroEthernet
@@ -194,10 +217,10 @@
         but also in remote districts and villages.
       </p>
       <p class="pusher-more">
-        <a href="https://demo.sinet.com.kh/" class="cta border" target="_new">Read More</a>
+        <a href="https://www.sinet.com.kh" class="cta border" target="_new">Read More</a>
       </p>
-      <p class="pusher-more">
-        <img src="assets/images/sinet-logo.png" />
+      <p class="pusher-more"> 
+        <img src="assets/images/sinet-logo.png" alt="SINET Logo" class="company-logo"/>
       </p>
     </div>
   </div>
@@ -205,43 +228,49 @@
   <!-- CDC Section -->
   <div class="pusher-more">
     <div class="container">
-      <h3>CDC</h3> <!-- Will now be normal weight -->
-      <p>
+      <p class="pusher-more text-center cdc-logo-wrapper"> 
+        <img src="assets/images/cdc_logo.png" alt="CDC Logo" class="company-logo"/>
+      </p>
+      <h2>CDC</h2> <!-- Now non-bold due to CSS update -->
+      <p> 
         Discover the Future of Data Management Our certified Tier III data center offers unparalleled reliability and security, designed with your needs in mind. Experience world-class infrastructure tailored for seamless connectivity and peace of mind.
       </p>
-      <!-- CDC "Read More" Button Added -->
-      <p class="pusher-more">
+      <p class="pusher-more"> 
         <a href="http://demo.chaktomuk-dc.com.kh/" class="cta border" target="_new">Read More</a>
       </p>
-      <!-- You might want to add a CDC logo here if available, similar to SINET -->
     </div>
   </div>
   <!-- End CDC Section -->
 
   <div class="clear"></div>
 
-  <!-- SOK IM Property Section -->
-  <div class="halves sok-im-property-half">
+  <!-- SAYON Property Section - RESTRUCTURED -->
+  <div class="pusher-more" style="padding-bottom: 30px;"> <!-- Changed from halves sok-im-property-half -->
     <div class="container">
-      <div class="the-half">
-        <div class="cover-text">
-          <h2>SOK IM Property</h2> <!-- This h2 will remain bold by default -->
-          <p>
-            A real estate specialist in Cambodia managing and creating office spaces, warehouses and land in premier locations nationwide.
-            Our properties are well suited for commercial and industrial uses such as comany branches, small to medium organisations
-            and enterprises, warehouses or distribution depots. All our properties are well connected with reliable utility
-            supplies and dedicated fiber optic Internet access.
-          </p>
-        </div>
-      </div>
+      <!-- SAYON Property Logo - ADDED -->
+      <p class="pusher-more text-center sayon-logo-wrapper">
+        <img src="assets/images/sayon_logo.jpg" alt="SAYON Property Logo" class="company-logo"/> <!-- REPLACE with actual logo -->
+      </p>
+      <h2>SAYON Property</h2> <!-- Renamed, now non-bold due to CSS update -->
+      <p>
+        A real estate specialist in Cambodia managing and creating office spaces, warehouses and land in premier locations nationwide.
+        Our properties are well suited for commercial and industrial uses such as comany branches, small to medium organisations
+        and enterprises, warehouses or distribution depots. All our properties are well connected with reliable utility
+        supplies and dedicated fiber optic Internet access.
+      </p>
+      <!-- SAYON Property "Read More" Button - ADDED -->
+      <p class="pusher-more">
+        <a href="https://www.sayon.com.kh/" class="cta border" target="_new">Read More</a> <!-- UPDATE HREF -->
+      </p>
     </div>
   </div>
+  <!-- End SAYON Property Section -->
 
-  <!-- BDC Section -->
-  <div class="halves clear-up">
+  <!-- BDC Section (Remains as is, forms the other half) -->
+  <div class="halves clear-up"> <!-- This .halves structure is for BDC -->
     <div class="the-half2">
       <div class="cover-text">
-        <h2>BDC</h2> <!-- This h2 will also remain bold by default -->
+        <h2>BDC</h2> <!-- This H2 remains bold as it's not directly under .pusher-more .container -->
         <p>
           <a href="#">BDC Co., Ltd</a>
         </p>
@@ -264,7 +293,7 @@
   <div id="boardOfDirectors" class="container board-of-directors-section">
       <div class="row">
           <div class="col-lg-12">
-              <h2>Board of Directors</h2>
+              <h2>Board of Directors</h2> <!-- This H2 remains bold -->
               <p>
                   Madam. Sok Im, President
                   <br /> Mr. Phu Cai Qiang, Steven, Vice President
@@ -277,7 +306,7 @@
   <div id="aboutUs" class="container pusher-more about-us-section">
     <div class="row">
         <div class="col-lg-10 col-lg-offset-1">
-            <h3 class="section-title">ABOUT US</h3>
+            <h3 class="section-title">ABOUT US</h3> <!-- This H3 is bold via .section-title -->
             <p>
                 Sok Im Holding: is a sole proprietary holding company with diversified businesses and investments in various key growth sectors
                 in Telecommunications, Trading, Property, FMCG, Travel, and Hospitality in Cambodia for more than 20 years. Sok Im
@@ -303,12 +332,12 @@
     <div class="container">
       <div class="row">
         <div class="col-md-12 text-center">
-           <h2>CONTACT US</h2>
+           <h2>CONTACT US</h2> <!-- This H2 is bold -->
         </div>
       </div>
       <div class="row">
         <div class="col-md-8 col-md-offset-2 text-center contact-details">
-          <h3 class="head-office">Head Office</h3>
+          <h3 class="head-office">Head Office</h3> <!-- This H3 is bold -->
           <p>
             S.I Building # 93, Preah Sihanouk Blvd, Phnomh Penh, Cambodia
           </p>
