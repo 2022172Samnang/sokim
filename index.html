@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <html lang="en">
 
 <head>
@@ -17,130 +18,143 @@
   <style>
     /* --- Global Font Adjustments --- */
     body {
-      font-size: 15px; 
+      font-size: 15px;
     }
 
-    h1, .h1 { font-size: 2.5em; } 
-    h2, .h2 { font-size: 2.1em; } 
-    h3, .h3 { font-size: 1.7em; } 
-    h4, .h4 { font-size: 1.25em; } 
+h1, .h1 { font-size: 2.5em; }
+h2, .h2 { font-size: 2.1em; }
+h3, .h3 { font-size: 1.7em; }
+h4, .h4 { font-size: 1.25em; }
 
-    p {
-      line-height: 1.6; 
-    }
+p {
+  line-height: 1.6;
+}
 
-    .pusher-more .container p,
-    /* .cover-text p, Replaced by more specific styling or will inherit from above */
-    .about-us-section p {
-        font-size: 1.07em; 
-        line-height: 1.7;
-    }
-    /* --- End Global Font Adjustments --- */
+.pusher-more .container p,
+/* .cover-text p, Replaced by more specific styling or will inherit from above */
+.about-us-section p {
+    font-size: 1.07em;
+    line-height: 1.7;
+}
+/* --- End Global Font Adjustments --- */
 
-    .contact-section-wrapper {
-      background-color: #23A09A; 
-      color: #ffffff;
-      padding: 50px 0;
-    }
-    .contact-section-wrapper h2, .contact-section-wrapper h3 {
-      color: #ffffff;
-      font-weight: bold;
-    }
-    .contact-section-wrapper h2 {
-        font-size: 2.6em;
-        margin-bottom: 30px;
-    }
-    .contact-section-wrapper .contact-details {
-        font-size: 1.15em;
-        line-height: 1.7;
-    }
-    .contact-section-wrapper .contact-details p {
-        margin-bottom: 10px;
-    }
-    .contact-section-wrapper .contact-details a {
-      color: #f0ad4e; 
-      font-weight: bold;
-      text-decoration: underline;
-    }
-    .contact-section-wrapper .head-office {
-        margin-top:0;
-        margin-bottom:15px;
-    }
-    .board-of-directors-section {
-        padding-top: 40px;
-        padding-bottom: 40px;
-        text-align: center;
-        background-color: #f9f9f9; 
-    }
-    .board-of-directors-section h2 {
-        margin-bottom: 20px;
-        font-weight: bold;
-    }
-    .board-of-directors-section p {
-        font-size: 1.15em;
-        line-height: 1.8;
-        color: #333;
-    }
-    .about-us-section {
-        padding-top: 40px;
-        padding-bottom: 40px;
-    }
-    .about-us-section h4 { 
-        font-weight: bold;
-        margin-top: 25px;
-        margin-bottom: 10px;
-    }
+.contact-section-wrapper {
+  background-color: #23A09A;
+  color: #ffffff;
+  padding: 50px 0;
+}
+.contact-section-wrapper h2, .contact-section-wrapper h3 {
+  color: #ffffff;
+  font-weight: bold;
+}
+.contact-section-wrapper h2 {
+    font-size: 2.6em;
+    margin-bottom: 30px;
+}
+.contact-section-wrapper .contact-details {
+    font-size: 1.15em;
+    line-height: 1.7;
+}
+.contact-section-wrapper .contact-details p {
+    margin-bottom: 10px;
+}
+.contact-section-wrapper .contact-details a {
+  color: #f0ad4e;
+  font-weight: bold;
+  text-decoration: underline;
+}
+.contact-section-wrapper .head-office {
+    margin-top:0;
+    margin-bottom:15px;
+}
+.board-of-directors-section {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    text-align: center;
+    background-color: #ffffff; /* UPDATED: White background */
+}
+.board-of-directors-section h2 {
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+.board-of-directors-section p {
+    font-size: 1.15em;
+    line-height: 1.8;
+    color: #333;
+}
+.about-us-section {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    background-color: #ffffff; /* UPDATED: Light grey background */
+}
+.about-us-section h4 {
+    font-weight: bold;
+    margin-top: 25px;
+    margin-bottom: 10px;
+}
 
-    /* Styles for BDC half section (formerly SOK IM Property had similar structure) */
-    .halves .cover-text { /* General styling for text in the halves if needed */
-        color: #333;
-    }
-    .halves .cover-text h2 {
-        color: #333; /* Default for BDC, was also for SOK IM Property */
-         /* H2s in .halves.cover-text will be bold by default from Bootstrap */
-    }
-     .halves .cover-text p {
-        font-size: 1.07em; /* Match other paragraph text */
-        line-height: 1.7;
-    }
+/* Styles for BDC half section (formerly SOK IM Property had similar structure) */
+.halves .cover-text { /* General styling for text in the halves if needed */
+    color: #333;
+}
+.halves .cover-text h2 {
+    color: #333; /* Default for BDC, was also for SOK IM Property */
+     /* H2s in .halves.cover-text will be bold by default from Bootstrap */
+}
+ .halves .cover-text p {
+    font-size: 1.07em; /* Match other paragraph text */
+    line-height: 1.7;
+}
 
 
-    .section-title { /* Used for About Us H3 */
-        margin-bottom: 30px;
-        font-weight: bold;
-        text-align: center;
-    }
+.section-title { /* Used for About Us H3 */
+    margin-bottom: 30px;
+    font-weight: bold;
+    text-align: center;
+}
 
-    .navbar-default .navbar-nav > li > a {
-        font-size: 1em;
-    }
+.navbar-default .navbar-nav > li > a {
+    font-size: 1em;
+}
 
-    /* Titles like SINET, CDC, SAYON Property - MODIFIED to target H2 and make non-bold */
-    .pusher-more .container > h2 { 
-        font-weight: normal; 
-        margin-bottom: 15px;
-        /* font-size is 2.1em from global h2 style */
-    }
+/* Titles like SINET, CDC, SAYON Property - MODIFIED to target H2 and make non-bold */
+.pusher-more .container > h2 {
+    font-weight: normal;
+    margin-bottom: 15px;
+    /* font-size is 2.1em from global h2 style */
+}
 
-    /* Style for company logos in SINET/CDC/SAYON sections */
-    .pusher-more .container img[src*="logo"] {
-        margin-top: 15px; 
-    }
+/* Style for company logos in SINET/CDC/SAYON sections */
+.pusher-more .container img[src*="logo"] {
+    margin-top: 15px;
+}
 
-    /* Class for SINET, CDC, SAYON Property logos to control their size */
-    .company-logo {
-      width: 197px; /* User-defined width */
-      height: auto; /* Maintain aspect ratio */
-    }
-    /* Specific margin for CDC logo wrapper */
-    .cdc-logo-wrapper { 
-        margin-bottom: 20px; /* Space between logo and text */
-    }
-    /* Specific margin for SAYON Property logo wrapper - NEW */
-    .sayon-logo-wrapper {
-        margin-bottom: 20px; /* Space between logo and text */
-    }
+/* Class for SINET, CDC, SAYON Property logos to control their size */
+.company-logo {
+  width: 197px; /* User-defined width */
+  height: auto; /* Maintain aspect ratio */
+}
+/* Specific margin for CDC logo wrapper */
+.cdc-logo-wrapper {
+    margin-bottom: 20px; /* Space between logo and text */
+}
+/* Specific margin for SAYON Property logo wrapper - NEW */
+.sayon-logo-wrapper {
+    margin-bottom: 20px; /* Space between logo and text */
+}
 
+/* --- New Styles for Alternating Backgrounds --- */
+.section-bg-white {
+    background-color: #ffffff;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.section-bg-light-grey {
+    background-color: #f9f9f9;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+/* --- End New Styles --- */
 
   </style>
 </head>
@@ -205,9 +219,11 @@
       </div>
     </div>
   </div>
-  <div class="pusher-more">
+
+  <!-- SINET Section -->
+  <div class="pusher-more section-bg-white">
     <div class="container">
-      <h2>SINET</h2> <!-- Now non-bold due to CSS update -->
+    <!--  <h2>SINET</h2>  Now non-bold due to CSS update -->
       <p>
         Founded in 2009, SINET is a Specialist Dedicated Internet and Telecom Service Provider with strong focuses on engineering
         excellence and reliable support. SINET is one of the biggest providers with nation-wide Fiber, DWDM, SDH and a MetroEthernet
@@ -219,23 +235,33 @@
       <p class="pusher-more">
         <a href="https://demo.sinet.com.kh/" class="cta border" target="_new">Read More</a>
       </p>
-      <p class="pusher-more"> 
+      <!-- <p class="pusher-more">
         <img src="assets/images/sinet-logo.png" alt="SINET Logo" class="company-logo"/>
-      </p>
+      </p> -->
     </div>
   </div>
-  
+  <!-- End SINET Section -->
+
   <!-- CDC Section -->
-  <div class="pusher-more">
+  <div class="pusher-more section-bg-light-grey">
     <div class="container">
-      <p class="pusher-more text-center cdc-logo-wrapper"> 
+      <p class="pusher-more text-center cdc-logo-wrapper">
         <img src="assets/images/cdc_logo.png" alt="CDC Logo" class="company-logo"/>
       </p>
-      <h2>CDC</h2> <!-- Now non-bold due to CSS update -->
-      <p> 
-        Discover the Future of Data Management Our certified Tier III data center offers unparalleled reliability and security, designed with your needs in mind. Experience world-class infrastructure tailored for seamless connectivity and peace of mind.
+      <!-- <h2>CDC</h2> Now non-bold due to CSS update -->
+       <br />
+      <p>
+        Chaktomuk Data Center is Cambodia’s certified ‘Fault Resistance Tier III’ data center offering superior data infrastructure with unparalleled reliability and security. Meticulously designed to world-class standards, our carrier-neutral facility presents a significant leap forward in data center technology in the heart of Southeast Asia.
       </p>
-      <p class="pusher-more"> 
+      <br />
+      <h4>IT‘S ALL ABOUT CONNECTION</h4>
+      <p>
+        Situated in Phnom Penh, the Chaktomuk junction is the meeting point of four rivers and a culturally and historically significant site of trade and exchange. And just like our namesake, we are a meeting point of strategic connection.
+      </p>
+      <p>
+        We keep our clients’ operations seamlessly connected and protected with our unwavering commitment to reliability and our rigorous physical and IT-based security systems.
+      </p>
+      <p class="pusher-more">
         <a href="http://demo.chaktomuk-dc.com.kh/" class="cta border" target="_new">Read More</a>
       </p>
     </div>
@@ -245,13 +271,13 @@
   <div class="clear"></div>
 
   <!-- SAYON Property Section - RESTRUCTURED -->
-  <div class="pusher-more" style="padding-bottom: 30px;"> <!-- Changed from halves sok-im-property-half -->
+  <div class="pusher-more section-bg-white"> <!-- Changed from halves sok-im-property-half, removed inline style, added class -->
     <div class="container">
       <!-- SAYON Property Logo - ADDED -->
       <p class="pusher-more text-center sayon-logo-wrapper">
         <img src="assets/images/sayon_logo.jpg" alt="SAYON Property Logo" class="company-logo"/> <!-- REPLACE with actual logo -->
       </p>
-      <h2>SAYON Property</h2> <!-- Renamed, now non-bold due to CSS update -->
+      <!-- <h2>SAYON Property</h2> Renamed, now non-bold due to CSS update -->
       <p>
         A real estate specialist in Cambodia managing and creating office spaces, warehouses and land in premier locations nationwide.
         Our properties are well suited for commercial and industrial uses such as comany branches, small to medium organisations
@@ -267,7 +293,7 @@
   <!-- End SAYON Property Section -->
 
   <!-- BDC Section (Remains as is, forms the other half) -->
-  <div class="halves clear-up"> <!-- This .halves structure is for BDC -->
+  <div class="halves clear-up section-bg-light-grey"> <!-- Added section-bg-light-grey for background and padding -->
     <div class="the-half2">
       <div class="cover-text">
         <h2>BDC</h2> <!-- This H2 remains bold as it's not directly under .pusher-more .container -->
@@ -290,7 +316,7 @@
   <div class="clear"></div>
 
   <!-- Board of Directors Section -->
-  <div id="boardOfDirectors" class="container board-of-directors-section">
+  <div id="boardOfDirectors" class="container board-of-directors-section"> <!-- Background color changed in CSS to #ffffff -->
       <div class="row">
           <div class="col-lg-12">
               <h2>Board of Directors</h2> <!-- This H2 remains bold -->
@@ -301,9 +327,10 @@
           </div>
       </div>
   </div>
+  <!-- End Board of Directors Section -->
 
   <!-- About Us Section -->
-  <div id="aboutUs" class="container pusher-more about-us-section">
+  <div id="aboutUs" class="container pusher-more about-us-section"> <!-- Background color changed in CSS to #f9f9f9 -->
     <div class="row">
         <div class="col-lg-10 col-lg-offset-1">
             <h3 class="section-title">ABOUT US</h3> <!-- This H3 is bold via .section-title -->
@@ -326,6 +353,7 @@
     </div>
   </div>
   <div class="clear"></div>
+  <!-- End About Us Section -->
 
   <!-- Contact Us Section -->
   <div class="container-fluid contact-section-wrapper" id="contact">
@@ -352,6 +380,7 @@
     </div>
   </div>
   <div class="clear"></div>
+  <!-- End Contact Us Section -->
 
   <footer>
     <div class="container">
