@@ -85,7 +85,7 @@ p {
 .about-us-section {
     padding-top: 40px;
     padding-bottom: 40px;
-    background-color: #ffffff; /* UPDATED: Light grey background */
+    background-color: #f9f9f9; /* UPDATED: Light grey background */
 }
 .about-us-section h4 {
     font-weight: bold;
@@ -134,12 +134,23 @@ p {
   width: 197px; /* User-defined width */
   height: auto; /* Maintain aspect ratio */
 }
+
+.bdc-logo {
+  width: 100px; /* User-defined width */
+  height: auto; /* Maintain aspect ratio */
+}
+
 /* Specific margin for CDC logo wrapper */
 .cdc-logo-wrapper {
     margin-bottom: 20px; /* Space between logo and text */
 }
 /* Specific margin for SAYON Property logo wrapper - NEW */
 .sayon-logo-wrapper {
+    margin-bottom: 20px; /* Space between logo and text */
+}
+
+/* NEW: Specific margin for BDC (LIX) logo wrapper */
+.bdc-logo-wrapper {
     margin-bottom: 20px; /* Space between logo and text */
 }
 
@@ -223,7 +234,7 @@ p {
   <!-- SINET Section -->
   <div class="pusher-more section-bg-white">
     <div class="container">
-    <!--  <h2>SINET</h2>  Now non-bold due to CSS update -->
+      <h2>SINET</h2>
       <p>
         Founded in 2009, SINET is a Specialist Dedicated Internet and Telecom Service Provider with strong focuses on engineering
         excellence and reliable support. SINET is one of the biggest providers with nation-wide Fiber, DWDM, SDH and a MetroEthernet
@@ -248,8 +259,7 @@ p {
       <p class="pusher-more text-center cdc-logo-wrapper">
         <img src="assets/images/cdc_logo.png" alt="CDC Logo" class="company-logo"/>
       </p>
-      <!-- <h2>CDC</h2> Now non-bold due to CSS update -->
-       <br />
+      <h2>CDC</h2>
       <p>
         Chaktomuk Data Center is Cambodia’s certified ‘Fault Resistance Tier III’ data center offering superior data infrastructure with unparalleled reliability and security. Meticulously designed to world-class standards, our carrier-neutral facility presents a significant leap forward in data center technology in the heart of Southeast Asia.
       </p>
@@ -268,58 +278,50 @@ p {
   </div>
   <!-- End CDC Section -->
 
-  <div class="clear"></div>
-
-  <!-- SAYON Property Section - RESTRUCTURED -->
-  <div class="pusher-more section-bg-white" style="padding-top: 0px;"> <!-- Changed from halves sok-im-property-half, removed inline style, added class -->
+  <!-- SAYON Property Section -->
+  <div class="pusher-more section-bg-white" style="padding-top: 0px;">
     <div class="container">
-      <!-- SAYON Property Logo - ADDED -->
       <p class="pusher-more text-center sayon-logo-wrapper">
-        <img src="assets/images/sayon_logo.jpg" alt="SAYON Property Logo" class="company-logo"/> <!-- REPLACE with actual logo -->
+        <img src="assets/images/sayon_logo.jpg" alt="SAYON Property Logo" class="company-logo"/>
       </p>
-      <!-- <h2>SAYON Property</h2> Renamed, now non-bold due to CSS update -->
+      <h2>SAYON Property</h2>
       <p>
         A real estate specialist in Cambodia managing and creating office spaces, warehouses and land in premier locations nationwide.
         Our properties are well suited for commercial and industrial uses such as comany branches, small to medium organisations
         and enterprises, warehouses or distribution depots. All our properties are well connected with reliable utility
         supplies and dedicated fiber optic Internet access.
       </p>
-      <!-- SAYON Property "Read More" Button - ADDED -->
       <p class="pusher-more">
-        <a href="https://property.sayon.com.kh/" class="cta border" target="_new">Read More</a> <!-- UPDATE HREF -->
+        <a href="https://property.sayon.com.kh/" class="cta border" target="_new">Read More</a>
       </p>
     </div>
   </div>
   <!-- End SAYON Property Section -->
 
-  <!-- BDC Section (Remains as is, forms the other half) -->
-  <div class="halves clear-up section-bg-light-grey"> <!-- Added section-bg-light-grey for background and padding -->
-    <div class="the-half2">
-      <div class="cover-text">
-        <h2>BDC</h2> <!-- This H2 remains bold as it's not directly under .pusher-more .container -->
-        <p>
-          <a href="#">BDC Co., Ltd</a>
-        </p>
-        <p>
-          The premier partner of
-          <span class="text-red">LIXCO</span> Joint Stock Company and the main distributor of LIX Detergent products, one of the most recognisable
-          brands in the Cambodia household market. We have well-established distribution channels in all provinces and remote
-          areaswith 85 permanent staffs nationwide since 1995.
-        </p>
-        <div class="lix-logos pusher-more padding-logo">
-          <img src="assets/images/best-quality.jpg" width="90" class="img-responsive pull-left" />
-          <img src="assets/images/lix-logo.png" width="150" class="img-responsive pull-left" />
-        </div>
-      </div>
+  <!-- BDC Section - RESTRUCTURED -->
+  <div class="pusher-more section-bg-light-grey">
+    <div class="container">
+      <p class="pusher-more text-center bdc-logo-wrapper">
+        <img src="assets/images/best-quality.jpg" alt="LIX Logo for BDC" class="bdc-logo"/>
+      </p>
+      <h2>BDC</h2>
+      <p>
+        The premier partner of <span class="text-red">LIXCO</span> Joint Stock Company and the main distributor of LIX Detergent products, one of the most recognisable
+        brands in the Cambodia household market. We have well-established distribution channels in all provinces and remote
+        areaswith 85 permanent staffs nationwide since 1995.
+      </p>
+      <p class="pusher-more">
+        <a href="#" class="cta border" target="_new">Read More</a> <!-- Consider updating href if a specific BDC page exists -->
+      </p>
     </div>
   </div>
-  <div class="clear"></div>
+  <!-- End BDC Section -->
 
   <!-- Board of Directors Section -->
-  <div id="boardOfDirectors" class="container board-of-directors-section"> <!-- Background color changed in CSS to #ffffff -->
+  <div id="boardOfDirectors" class="container board-of-directors-section">
       <div class="row">
           <div class="col-lg-12">
-              <h2>Board of Directors</h2> <!-- This H2 remains bold -->
+              <h2>Board of Directors</h2>
               <p>
                   Madam. Sok Im, President
                   <br /> Mr. Phu Cai Qiang, Steven, Vice President
@@ -330,27 +332,29 @@ p {
   <!-- End Board of Directors Section -->
 
   <!-- About Us Section -->
-  <div id="aboutUs" class="container pusher-more about-us-section"> <!-- Background color changed in CSS to #f9f9f9 -->
-    <div class="row">
-        <div class="col-lg-10 col-lg-offset-1">
-            <h3 class="section-title">ABOUT US</h3> <!-- This H3 is bold via .section-title -->
-            <p>
-                Sok Im Holding: is a sole proprietary holding company with diversified businesses and investments in various key growth sectors
-                in Telecommunications, Trading, Property, and Hospitality in Cambodia for more than 20 years. Sok Im
-                Holding is the preferred business partners of choice for national and international companies. We are held in high
-                regards thanks to our humble business dealings, strong ethical and integrity standards and close relations with relevant
-                authorities.
-                <br />
-                <br />
-                <h4>Core Values</h4>
-                People: people are our best and most important assets.
-                <br /> Accountability: we take charge of our work end to end.
-                <br /> Quality: we ensure high and consistent quality not only to our customers, but also to fellow employees and shareholders.
-                <br /> Integrity: we value honesty, truthfulness and strong ethical standard.
-                <br /> Social Responsibility: we do our work responsibly to our environment and community.
-            </p>
-        </div>
-    </div>
+  <div style="background-color: #f9f9f9;">
+    <div id="aboutUs" class="container pusher-more about-us-section">
+      <div class="row">
+          <div class="col-lg-10 col-lg-offset-1">
+              <h3 class="section-title">ABOUT US</h3>
+              <p>
+                  Sok Im Holding: is a sole proprietary holding company with diversified businesses and investments in various key growth sectors
+                  in Telecommunications, Trading, Property, and Hospitality in Cambodia for more than 20 years. Sok Im
+                  Holding is the preferred business partners of choice for national and international companies. We are held in high
+                  regards thanks to our humble business dealings, strong ethical and integrity standards and close relations with relevant
+                  authorities.
+                  <br />
+                  <br />
+                  <h4>Core Values</h4>
+                  People: people are our best and most important assets.
+                  <br /> Accountability: we take charge of our work end to end.
+                  <br /> Quality: we ensure high and consistent quality not only to our customers, but also to fellow employees and shareholders.
+                  <br /> Integrity: we value honesty, truthfulness and strong ethical standard.
+                  <br /> Social Responsibility: we do our work responsibly to our environment and community.
+              </p>
+          </div>
+      </div>
+  </div>
   </div>
   <div class="clear"></div>
   <!-- End About Us Section -->
@@ -360,21 +364,21 @@ p {
     <div class="container">
       <div class="row">
         <div class="col-md-12 text-center">
-           <h2>CONTACT US</h2> <!-- This H2 is bold -->
+           <h2>CONTACT US</h2>
         </div>
       </div>
       <div class="row">
         <div class="col-md-8 col-md-offset-2 text-center contact-details">
-          <h3 class="head-office">Head Office</h3> <!-- This H3 is bold -->
-          <p>
+          <h3 class="head-office">Head Office</h3>
+          <a href="https://www.google.com.kh/maps/place/SINET+Internet+Service+Provider/@11.5560071,104.9212146,19z/data=!3m1!4b1!4m5!3m4!1s0x3109513b66f3d7cf:0x92bd9e1cb7bbd8cb!8m2!3d11.5560058!4d104.9217618?hl=en" target="_new" style="text-decoration: none; color: #ffffff;">
             S.I Building # 93, Preah Sihanouk Blvd, Phnomh Penh, Cambodia
-          </p>
-          <p>
+          </a>
+          <!-- <p>
             <a href="https://www.google.com.kh/maps/place/SINET+Internet+Service+Provider/@11.5560071,104.9212146,19z/data=!3m1!4b1!4m5!3m4!1s0x3109513b66f3d7cf:0x92bd9e1cb7bbd8cb!8m2!3d11.5560058!4d104.9217618?hl=en"
               target="_new">
               View Map
             </a>
-          </p>
+          </p> -->
         </div>
       </div>
     </div>
